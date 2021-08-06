@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!--responsividade-->
+
+    <link rel="stylesheet" href="responsive.css">    
+    
+    <!--owl css-->
+
+    <link rel="stylesheet" href="estilo/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="img/doc.jpg">
+
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <h2 class="logo">NETFLIX</h2>
+
+            <nav>
+
+                <a href="#">Início</a>
+                <a href="">Séries</a>
+                <a href="">Filmes</a>
+                <a href="">Documentários</a>
+
+            </nav>
+
+           
+             </div>
+             <div class="login">
+
+                <label class="login" for="username">Login:</label>
+                <input class="login" type="text" id="username" name="nome">
+                
+                
+                <label  class="login" for="pass">Senha:</label>
+                <input  class="login" type="password" id="pass" name="senha">
+               
+                    <button role="button" class="botao1">
+                     <i class="fas fa-sign-in-alt"></i>
+                     Acessar
+                    </button>
+                
+             </div>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="containe">
+
+                <h3 class="titulo" >Peaky Blinders</h3>
+                <p class="descricao">Os Peaky Blinders eram uma organização criminosa, originalmente de Birmingham, Inglaterra, que operavam desde final do século XIX até aos anos 30 do século XX. </p>
+            </div>
+            
+             <div class="botoes">   
+            <button role="button" class="botao">
+                <i class="fas fa-play"></i> 
+               ASSISTIR AGORA
+            </button> 
+            <button role="button" class="botao">
+                <i class="fas fa-info-circle"></i>
+                MAIS INFORMAÇÕES
+           </button>
+            </div>
+        </div>
+
+    </main>
+    <div class="carrosel-filmes"></div>
+        <div class="owl-carousel  owl-theme">
+            
+            <img class="box-filme" src="img/b-b-d.jpg" alt="">
+            <img class="box-filme" src="img/coringa.jpg" alt="">
+            <img class="box-filme" src="img/deadpool.jpg" alt="">
+            <img class="box-filme" src="img/ford-ferrari.jpg" alt="">
+            <img class="box-filme" src="img/grey.jpg" alt="">
+            <img class="box-filme" src="img/se-beber-nao-case.jpg" alt="">
+            <img class="box-filme" src="img/monstros-s-a.jpg">
+            <img class="box-filme" src="img/simpsons.jpg" alt="">
+            <img class="box-filme" src="img/doc.jpg" alt="">
+            <img class="box-filme" src="img/o-rei-leao.jpg" alt="">
+            
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/3b3953eeac.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
+    
+</body>
+</html>

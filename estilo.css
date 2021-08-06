@@ -1,149 +1,143 @@
+:root{
+    --vermelho: #E50914; 
+    --preto:  #141414;
+    --outra : #aaa;
+}
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
+}
+header{
+   display: flex;
+    justify-content: space-between;
+    
 }
 
 body{
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(243,243,243);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    background-color:var(--preto);
+    font-family: 'Arial', Times, serif ;
+    color: rgba(255, 255, 255, 0.979);
 }
 
-.instagram-wrapper{
+header .container{
+     display: flex;
+     flex-direction:column;
+     align-items: flex-start;
+     
+     
+     
+     
+}
+.logo{
+    margin-left: 5px;
+    color:var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+     text-decoration:none;
+     color: #aaa;
+     margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.filme-principal{
+    font-size: 15px;
+    
+    background-image:  url('img/peaky-blinders-2.jpg');
+    height: 500%;
+    background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 60%;
-    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.descricao.p{
+    color: rgba(170, 170, 170, 0.904);
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.botao{
+    background-color:  rgba(0,0,0.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal.container{
+    width: 70%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+   
+}
+
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.login{
+    display: block;
+    align-items: column;  
     padding: 0%;
     margin: 0%;
+    font-family: arial,Times;
+    color:#aaa;
+    margin-right: 2px;
+   
 }
 
-.intagram-fone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+.botao1{
+    background-color: #141414 ;
+    color:white;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+    padding: 1px;
+    margin: 1px;
+}
+.botao1:hover{
+    background-color: white;
+    color:#141414;
 }
 
-.instagram-fone img{
-    height: 42rem;
-}
 
-.instagram-continue{
-    display: flex;
-    align-items: center;/*horizontal*/
-    justify-content: space-around;/*vertical*/
-    flex-direction: column;
-    width: 110%;
-    min-height: 34rem;
-}
 
-.group{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 1.3rem 0;
-    border: 1px solid lightgray;
-}
-.group:nth-child(1){
-    min-height: 19rem;
-}
-
-.instagram-logo{
-    height: 3rem;
-}
-
-.profile-foto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.profile-foto img{
-    height: 6rem;
     
-}
-.instagram-login {
-    background-color: #0095f6;
-    color: #ffffff;
-    padding: 8px;
-    border-radius: 4px;
-}
-.instagram-logout{
-    color: #0095f6;
-    margin-top: 1rem;
-}
-.not-account{
-    color: rgb(160,160,160);
-}
-.link-blue{
-    color: #0095f6;
-}
-.get-the-app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1.3rem 0;
-}
-.download{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem;
-}
-.app-download{
-    height: 3rem;
-    width: 10rem;
-    background-size: cover;
-}
+    
 
-.app-download:nth-child(1){
-    background-image: url('./img/apple-button.png');
-}
-
-.app-download:nth-child(2){
-    background-image: url('./img/googleplay-button.png');
-}
-/*media queries*/
-
-@media (max-width:1024px){
-    .instagram-wrapper {
-        width: 90%;
-    }
-}
-@media (max-width:650px){
-      body{
-        background-color: #ffffff;
-    }
-    .instagram-wrapper{
-        width: 90%;
-    }
-
-  
-    .instagram-fone{
-       display: none;
-    }
-    .instagram-continue{
-        width: 100%;
-    }
-    .group{
-        border: 1px solid transparent;
-    }
-
-}
